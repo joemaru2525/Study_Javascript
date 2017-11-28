@@ -8,23 +8,27 @@
     <script>
         /*
             ループ処理
-            while
-            do ... while
-        */
+            for
 
-/*
+            break ループ処理を抜ける
+            continue ループ処理を1回スキップ
+
         var i = 0;
         while (i < 10) {
             console.log(i);
             i++;
         }
-*/
+        */
 
-        var i = 200;
-        do {
+        for (var i = 0; i < 10; i++) {
+            if (i === 5) {
+                // break;
+                continue;
+            }
             console.log(i);
-            i++;
-        } while (i < 10);
+        }
+
+
 
     </script>
 </body>
